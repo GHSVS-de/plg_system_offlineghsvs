@@ -13,6 +13,13 @@ const {
 const manifestFileName = `${filename}.xml`;
 const Manifest = `${__dirname}/package/${manifestFileName}`;
 
+// Just easier to handle in console.log:
+let from = '';
+let to = '';
+
+// Dummy. Just annoying to adapt replaceXml calls.
+let thisPackages = [];
+
 (async function exec()
 {
 	let cleanOuts = [
@@ -77,21 +84,24 @@ const Manifest = `${__dirname}/package/${manifestFileName}`;
 		answer => console.log(pc.yellow(pc.bold(
 			`Copied "${xmlFile}" to ./dist.`)))
 	);
-	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum);
+	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum,
+		thisPackages);
 
 	xmlFile = 'changelog.xml';
 	await fse.copy(`./${xmlFile}`, `./dist/${xmlFile}`).then(
 		answer => console.log(pc.yellow(pc.bold(
 			`Copied "${xmlFile}" to ./dist.`)))
 	);
-	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum);
+	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum,
+		thisPackages);
 
 	xmlFile = 'release.txt';
 	await fse.copy(`./${xmlFile}`, `./dist/${xmlFile}`).then(
 		answer => console.log(pc.yellow(pc.bold(
 			`Copied "${xmlFile}" to ./dist.`)))
 	);
-	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum);
+	await replaceXml.main(`${__dirname}/dist/${xmlFile}`, zipFilename, checksum,
+		thisPackages);
 
 	cleanOuts = [
 		`./package`,

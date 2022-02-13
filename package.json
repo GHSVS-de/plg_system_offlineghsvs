@@ -17,9 +17,8 @@
 	},
 	"releaseTxt": {
 		"title": "Joomla system plugin OfflineGhsvs",
-		"requires": [
-			""
-		]
+		"requires": [],
+		"uses": []
 	},
 	"changelog": {
 		"projecturl": "https://github.com/GHSVS-de/plg_system_offlineghsvs",
@@ -59,7 +58,7 @@
 	"keywords": [
 		"joomla",
 		"system plugin",
-		"web fonts"
+		"offline page"
 	],
 	"private": false,
 	"description": "Joomla system plugin. Select a template style that will be used to display the offline page in frontend.",
