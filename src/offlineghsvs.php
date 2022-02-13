@@ -11,11 +11,11 @@ class PlgSystemOfflineGhsvs extends CMSPlugin
 
 	function onAfterRoute()
 	{
-    if ($this->$app->isClient('site') && $this->$app->get('offline'))
+    if ($this->app->isClient('site') && $this->$app->get('offline'))
     {
 			if ($tid = (int) $this->params->get('offlineTemplateid', 0))
 			{
-				$this->$app->input->set('templateStyle', $tid);
+				$this->app->input->set('templateStyle', $tid);
 			}
     }
 	}
