@@ -2,7 +2,7 @@
 	"name": "plg_system_offlineghsvs",
 	"nameReal": "plg_system_offlineghsvs",
 	"filename": "offlineghsvs",
-	"version": "2022.02.13",
+	"version": "2022.02.14",
 	"versionCompare": "2022.02.11",
 	"update": {
 		"type": "plugin",
