@@ -20,4 +20,26 @@ class PlgSystemOfflineGhsvs extends CMSPlugin
 			}
     }
 	}
+
+/* 	public function onAfterInitialise()
+	{
+
+	if (JFactory::getApplication()->isClient('site') && JFactory::getApplication()->get('offline', 0))
+	{
+
+	$urls = array(
+	'/impressum',
+	'/programmierer-schnipsel/joomla/172-notfall-hack-configuration-php-auslesen',
+	'/datenschutz',
+	);
+
+	if (in_array(JUri::getInstance()->getPath(), $urls))
+	{
+	JFactory::getApplication()->set('offline', 0);
+	}
+	}
+
+	} */
+
+
 }
