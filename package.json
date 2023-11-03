@@ -71,9 +71,9 @@
 		"url": "https://github.com/GHSVS-de/plg_system_offlineghsvs.git"
 	},
 	"scripts": {
-		"g-build": "node build.js",
-    "g-npm-update-check": "npm outdated",
-    "g-npm-update": "npm update --save-dev"
+		"build": "node build.js",
+		"updateCheck": "npm outdated",
+		"update": "npm update --save-dev"
 	},
 	"dependencies": {},
 	"devDependencies": {},
