@@ -5,7 +5,7 @@ namespace GHSVS\Plugin\System\OfflineGhsvs\Extension;
 
 use Joomla\CMS\Plugin\CMSPlugin;
 
-class OfflineGhsvs extends CMSPlugin
+final class OfflineGhsvs extends CMSPlugin
 {
 	protected $autoloadLanguage = true;
 
