@@ -6,15 +6,16 @@
 -----------------------------------------------------
 
 # My personal build procedure (WSL 1, Debian, Win 10)
+
 - Prepare/adapt `./package.json`.
 - `cd /mnt/z/git-kram/plg_system_offlineghsvs`
 
-## node/npm installation/updates
-- If not done yet: `npm install`
+## node/npm updates/installation
+- `npm install` (if never done before)
 
-### Update
-- `npm run g-npm-update-check` or (faster) `npm outdated"`
-- `npm run g-npm-update` (if needed) or (faster) `npm update --save-dev`
+### Update dependencies
+- `npm run updateCheck` or (faster) `npm outdated`
+- `npm run update` (if needed) or (faster) `npm update --save-dev`
 
 ## Build installable ZIP package
 - `node build.js`
@@ -23,5 +24,5 @@
 
 ### For Joomla update and changelog server
 - Create new release with new tag.
-- - See and copy and complete release description in `dist/release.txt`.
-- Extracts(!) of the update and changelog XML for update and changelog servers are in `./dist` as well. Copy/paste and make necessary additions.
+  - See and copy and complete release description in `dist/release_no-changelog.txt`.
+- Extracts(!) of the update XML for update servers are in `./dist` as well. Copy/paste and make necessary additions.
