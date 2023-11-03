@@ -13,14 +13,14 @@ final class OfflineGhsvs extends CMSPlugin
 	{
 		$app = $this->getApplication();
 
-    if ($app->isClient('site') && $app->get('offline')
+		if ($app->isClient('site') && $app->get('offline')
 			&& (int) $app->getIdentity()->id === 0)
-    {
+		{
 			if ($tid = (int) $this->params->get('offlineTemplateid', 0))
 			{
 				$this->getApplication()->input->set('templateStyle', $tid);
 			}
-    }
+		}
 	}
 
 /* 	public function onAfterInitialise()
