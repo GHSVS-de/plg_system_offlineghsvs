@@ -15,6 +15,9 @@ class plgSystemOfflineGhsvsInstallerScript extends InstallerScript
 	 * @since  2.0
 	 */
 	protected $deleteFiles = [
+		'/plugins/system/offlineghsvs/offlineghsvs.php',
+		'/plugins/system/offlineghsvs/language/en-GB/en-GB.plg_system_offlineghsvs.ini',
+		'/plugins/system/offlineghsvs/language/en-GB/en-GB.plg_system_offlineghsvs.sys.ini',
 	];
 
 	/**

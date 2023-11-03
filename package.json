@@ -2,23 +2,26 @@
 	"name": "plg_system_offlineghsvs",
 	"nameReal": "plg_system_offlineghsvs",
 	"filename": "offlineghsvs",
-	"version": "2022.02.14",
-	"versionCompare": "2022.02.11",
+	"version": "2023.11.03",
+	"versionCompare": "2022.02.14",
+	"versionSub": "",
 	"update": {
+		"infourl": "https://github.com/GHSVS-de/plg_system_offlineghsvs{{thisRelease}}",
 		"type": "plugin",
 		"folder": "system",
 		"client": "site",
 		"tag": "stable",
 		"targetplatform": [
-			"3.*",
-			"4.*"
+			"4\\.(3|4|5|6|7|8|9|10|11|12|13|14|15)",
+			"5.*"
 		],
-		"namespace": ""
+		"namespace": "GHSVS\\Plugin\\System\\OfflineGhsvs"
 	},
 	"releaseTxt": {
 		"title": "Joomla system plugin OfflineGhsvs",
 		"requires": [],
-		"uses": []
+		"uses": [],
+		"language": []
 	},
 	"changelog": {
 		"projecturl": "https://github.com/GHSVS-de/plg_system_offlineghsvs",
@@ -27,16 +30,16 @@
 		"docsDE": "",
 		"docsEN": "",
 		"lastTests": [
-			"PHP 8.0",
-			"PHP 7.4",
-			"Joomla 3.10.5",
-			"Joomla 4.0.6"
+			"PHP 8.2",
+			"PHP 8.1",
+			"Joomla 4.4",
+			"Joomla 5.0"
 		]
 	},
 	"minimumPhp": "7.4.0",
-	"maximumPhp": "8.9999.9999",
-	"minimumJoomla": "3.10.4",
-	"maximumJoomla": "4.9999.9999",
+	"maximumPhp": "",
+	"minimumJoomla": "4.3.0",
+	"maximumJoomla": "5.9999.9999",
 	"allowDowngrades": "1",
 	"creationDate": "2022-02-11",
 	"licenseLong": "GNU General Public License version 3 or later; see LICENSE.txt.",
@@ -72,14 +75,7 @@
     "g-npm-update-check": "npm outdated",
     "g-npm-update": "npm update --save-dev"
 	},
-	"dependencies": {
-	},
-	"devDependencies": {
-		"adm-zip": "^0.5.9",
-		"picocolors": "^1.0.0",
-		"fs-extra": "10.0.0",
-		"path": "^0.12.7",
-		"rimraf": "3.0.2"
-	},
+	"dependencies": {},
+	"devDependencies": {},
 	"browserslist": []
 }

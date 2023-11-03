@@ -1,22 +1,24 @@
 <?php
+namespace GHSVS\Plugin\System\OfflineGhsvs\Extension;
+
 \defined('_JEXEC') or die;
 
-use Joomla\CMS\Factory;
 use Joomla\CMS\Plugin\CMSPlugin;
 
-class PlgSystemOfflineGhsvs extends CMSPlugin
+class OfflineGhsvs extends CMSPlugin
 {
-	protected $app;
 	protected $autoloadLanguage = true;
 
 	function onAfterRoute()
 	{
-    if ($this->app->isClient('site') && $this->app->get('offline')
-			&& (int) Factory::getUser()->get('id') === 0)
+		$app = $this->getApplication();
+
+    if ($app->isClient('site') && $app->get('offline')
+			&& (int) $app->getIdentity()->id === 0)
     {
 			if ($tid = (int) $this->params->get('offlineTemplateid', 0))
 			{
-				$this->app->input->set('templateStyle', $tid);
+				$this->getApplication()->input->set('templateStyle', $tid);
 			}
     }
 	}
