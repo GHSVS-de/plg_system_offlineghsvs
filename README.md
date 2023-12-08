@@ -3,6 +3,9 @@
 - Joomla-System-Plugin.
 - Select a template style that will be used to display the offline page in frontend.
 
+## Deutsche Beschreibung
+[Template-Stil für Joomla-Offline-Modus umswitchen](https://ghsvs.de/programmierer-schnipsel/joomla/376-template-stil-fuer-joomla-offline-modus-umswitchen)
+
 -----------------------------------------------------
 
 # My personal build procedure (WSL 1, Debian, Win 10)
