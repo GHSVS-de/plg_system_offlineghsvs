@@ -8,7 +8,7 @@
 
 -----------------------------------------------------
 
-# My personal build procedure (WSL 1, Debian, Win 10)
+# My personal build procedure (WSL 1 or 2, Debian, Win 10)
 
 - Prepare/adapt `./package.json`.
 - `cd /mnt/z/git-kram/plg_system_offlineghsvs`
